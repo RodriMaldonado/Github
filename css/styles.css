@@ -1,0 +1,270 @@
+/* Inicio e index */
+body {
+    background-color:white;
+}
+/* Home */
+#grid-contenedor {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "logo nav nav nav nav"
+    "bannerhome bannerhome bannerhome bannerhome bannerhome"
+    "fotos fotos fotos fotos fotos"
+    "bannerfot bannerfot bannerfot bannerfot bannerfot"
+    "footer footer footer footer footer" ;
+}
+.logo {
+    grid-area: logo;
+}
+.logo img {
+    height: 200px;
+    width: 200px;
+}
+.nav {
+    grid-area: nav;
+}
+.nav .lista {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.lista li a{
+    display: flex;
+    padding:100px;
+    color: black;
+    font-family: 'Permanent Marker',cursive;
+    
+}
+.lista li a:hover {
+    color: red;
+}
+.bannerhome {
+    grid-area: bannerhome;
+    margin-bottom: 20px;
+}
+.home {
+    width: 100vw;
+    height:300px ;
+}
+.grid-fotos {
+    grid-area: fotos;
+}
+.grid-fotos {
+    display: grid;
+    grid-template-areas:
+    "1 2 3";
+    justify-content: space-around;
+   gap: 100px;
+   font-family:'Bebas Neue', cursive; ;
+}
+.banner-fot {
+    grid-area: bannerfot;
+}
+.fot {
+    width: 100vw;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+}
+.footer .list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.footer .list a {
+display: flex;
+color: black;
+text-decoration: none;
+}
+.footer .list a:hover {
+color: red;
+}
+.footer .list .efectot {
+    margin-left: 8px;
+}
+/* Contacto */
+
+#fieldset {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Ofertas */
+#grid-contenedor2 {
+    display: grid;
+    grid-template-areas:
+    "logo nav nav nav nav"
+    "banner banner banner banner banner"
+    "ofertas ofertas ofertas ofertas ofertas"
+    "bannerfot bannerfot bannerfot bannerfot bannerfot"
+    "footer footer footer footer footer" ;
+}
+.logo {
+    grid-area: logo;
+}
+.nav {
+    grid-area: nav;
+}
+
+.bannerOferta {
+    grid-area: banner;  
+}
+
+.ofertasProductos {
+    grid-area: ofertas;
+    display: grid;
+    grid-template-areas: 
+    "1 2 3";
+    justify-content: space-around;
+    gap: 100px;
+    font-family:'Bebas Neue', cursive; ;
+}
+.banner-fot {
+    grid-area: bannerfot;
+}
+.footer {
+    grid-area: footer;
+}
+.bannerOferta .ofertas {
+    width:100vw;
+}
+.bannerOferta h1 {
+    text-align: center;
+    font-family: 'Permanent Marker',cursive;
+
+}
+
+/* Productos */
+.icbc {
+    width: 100%;
+}
+
+/* Media queries */
+/* Ofertas */
+@media (max-width: 425px) {
+    #grid-contenedor2 {
+       display: flex;
+       flex-direction: column;
+       background-color: tomato;
+   }
+   .nav .lista {
+       display: flex;
+       flex-direction: column;
+       padding: 1px;
+   }
+    .lista li a {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;  
+   }
+   .ofertasProductos {
+       display: flex;
+       flex-direction: column;
+   }
+   .bannerOferta .ofertas {
+      display: none;
+   }
+   .banner-fot {
+       display: none;
+   }
+ 
+}
+@media (min-width: 425px) and (max-width: 768px) {
+    #grid-contenedor2 {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+    }
+    .nav .lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .lista li a {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .ofertasProductos {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerOferta .ofertas {
+      display: none;
+    }
+    .banner-fot {
+        display: none;
+    }
+    
+}
+
+/* Index querie */
+@media (max-width: 425px) {
+    #grid-contenedor {
+        display: flex;
+       flex-direction: column;
+       background-color: tomato;
+    }
+    .nav .lista {
+        display: flex;
+        flex-direction: column;
+        padding: 1px;
+    }
+     .lista li a {
+         display: flex;
+         flex-direction: column;
+         padding: 5px; 
+    }
+    .grid-fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerhome {
+        display: none;
+    }
+    .banner-fot {
+        display: none;
+    }
+    .footer .list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+    #grid-contenedor {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+    }
+    .nav .lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .lista li a {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .grid-fotos {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerhome {
+        display: none;
+    }
+    .banner-fot {
+       display: none;
+    }
+    .footer .list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
