@@ -1,2 +1,3 @@
 # Proyecto Supermarket
-### Curso CoderHouse 
+### GitHub
+Curso Desarrollo Web - Coder House
