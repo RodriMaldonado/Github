@@ -62,6 +62,7 @@ body {
 }
 .banner-fot {
     grid-area: bannerfot;
+    margin-top: 20px;
 }
 .fot {
     width: 100vw;
@@ -90,9 +91,23 @@ color: red;
     margin-left: 8px;
 }
 /* Contacto */
+#grid-contenedor4 {
+    display: grid;
+    grid-template-areas: 
+    "logo nav nav nav nav"
+    "form form form form form"
+    "bannerfot bannerfot bannerfot bannerfot bannerfot"
+    "footer footer footer footer footer";
+}
+.nav {
+    grid-area: nav;
+}
+.form {
+    grid-area: form;
+}
 
 #fieldset {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -141,6 +156,40 @@ color: red;
     font-family: 'Permanent Marker',cursive;
 
 }
+.precio {
+    background-color:lightskyblue;
+}
+/* Categorias */
+#grid-contenedor3 {
+    display: grid;
+    grid-template-areas: 
+    "logo nav nav nav nav"
+    "icbc icbc icbc icbc icbc"
+    "iframe iframe iframe iframe iframe"
+    "bannerfot bannerfot bannerfot bannerfot bannerfot"
+    "footer footer footer footer footer";
+
+}
+.logo {
+    grid-area: logo;
+}
+.nav {
+    grid-area: nav;
+}
+.banIcbc {
+    grid-area: icbc;
+}
+.iframe {
+    grid-area: iframe;
+    margin-left: 650px;
+}
+.banner-fot {
+    grid-area: bannerfot;
+}
+.footer {
+    grid-area: footer;
+}
+
 
 /* Productos */
 .icbc {
