@@ -60,6 +60,7 @@ body {
    gap: 100px;
    font-family:'Bebas Neue', cursive; ;
 }
+
 .banner-fot {
     grid-area: bannerfot;
     margin-top: 20px;
@@ -131,6 +132,9 @@ color: red;
 
 .bannerOferta {
     grid-area: banner;  
+}
+.icon {
+    transform: rotate(20deg);
 }
 
 .ofertasProductos {

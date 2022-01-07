@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Ofertas | SuperMarket</title>
   </head>
   <body>
@@ -25,9 +26,9 @@
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
-
+     
       <div class="bannerOferta">
-        <h1>Aprovecha las mejores ofertas!!</h1>
+        <h1 class="animate__animated animate__backInLeft">Aprovecha las mejores ofertas!!</h1>
         <img class="ofertas" src="../img/ofertas/ofertas.png" alt="Ofertas" />
       </div>
 
@@ -35,32 +36,32 @@
 
       <div class="ofertas1">
         <p>Antitranspirante Dove 150Ml Go Fresh <span class="precio">$200,00</span></p>
-        <img src="../img/ofertas/AntitranspiranteDove.jpg" alt="">
+        <img class="icon" src="../img/ofertas/AntitranspiranteDove.jpg" alt="">
       </div>
 
       <div class="ofertas2">
         <p>Antitranspirante Dove men 150Ml Cuidado total <span class="precio">$200,00</span></p>
-        <img src="../img/ofertas/Antitranspirantedovemen.jpg" alt="">
+        <img class="icon" src="../img/ofertas/Antitranspirantedovemen.jpg" alt="">
       </div>
 
       <div class="ofertas3">
         <p>Antitranspirante Rexona Clinical 110Ml Aerosol <span class="precio">$260,00</span></p>
-        <img src="../img/ofertas/Antitranspiranterexonaclinical.jpg" alt="">
+        <img class="icon" src="../img/ofertas/Antitranspiranterexonaclinical.jpg" alt="">
       </div>
 
       <div class="ofertas4">
         <p>Jabon Liquido para diluir Skip 3L <span class="precio">$650,00</span></p>
-        <img src="../img/ofertas/Jabonliquidoskip.jpg" alt="">
+        <img class="icon" src="../img/ofertas/Jabonliquidoskip.jpg" alt="">
       </div>
 
       <div class="ofertas5">
         <p>Jabon Liquido Dove 220Ml Antibacterial <span class="precio">$190,00</span></p>
-        <img src="../img/ofertas/Jabonliquidodove.jpg" alt="">
+        <img class="icon" src="../img/ofertas/Jabonliquidodove.jpg" alt="">
       </div>
 
       <div class="ofertas6">
         <p>Detergente Cif 500Ml BioActive <span class="precio">$279,99</span></p>
-        <img src="../img/ofertas/Detergentecif.jpg" alt="">
+        <img class="icon" src="../img/ofertas/Detergentecif.jpg" alt="">
       </div>
 
     </section>
@@ -80,5 +81,10 @@
 
   </main>
 
+  <script src="js/wow.min.js"></script>
+  <script>
+     new WOW().init();
+  </script>
+  
   </body>
 </html>
